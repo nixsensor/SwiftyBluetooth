@@ -25,13 +25,13 @@ import CoreBluetooth
 
 // MARK: Shorthands for the Central singleton instance interface
 
-/// Allows you to initially set the Central sharedInstance and use the restore
-/// identifier string of your choice for state preservation between app
-/// launches. Must be called before anything else from the library and can only be called once.
-@discardableResult
-public func setSharedCentralInstanceWith(restoreIdentifier: String) -> Central {
-    return Central.setSharedInstanceWith(restoreIdentifier: restoreIdentifier)
-}
+///// Allows you to initially set the Central sharedInstance and use the restore
+///// identifier string of your choice for state preservation between app
+///// launches. Must be called before anything else from the library and can only be called once.
+//@discardableResult
+//public func setSharedCentralInstanceWith(restoreIdentifier: String) -> Central {
+//    return Central.setSharedInstanceWith(restoreIdentifier: restoreIdentifier)
+//}
 
 /// Scans for Peripherals through a CBCentralManager scanForPeripheralsWithServices(...) function call.
 ///

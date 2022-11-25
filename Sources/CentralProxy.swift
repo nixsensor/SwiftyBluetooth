@@ -409,9 +409,9 @@ extension CentralProxy: CBCentralManagerDelegate {
         scanRequest.callback(.scanResult(peripheral: peripheral, advertisementData: advertisementData, RSSI: rssiOptional))
     }
     
-    func centralManager(_ central: CBCentralManager, willRestoreState dict: [String: Any]) {
-        let peripherals = ((dict[CBCentralManagerRestoredStatePeripheralsKey] as? [CBPeripheral]) ?? []).map { Peripheral(peripheral: $0) }
-        postCentralEvent(Central.CentralManagerWillRestoreState, userInfo: ["peripherals": peripherals])
-    }
+//    func centralManager(_ central: CBCentralManager, willRestoreState dict: [String: Any]) {
+//        let peripherals = ((dict[CBCentralManagerRestoredStatePeripheralsKey] as? [CBPeripheral]) ?? []).map { Peripheral(peripheral: $0) }
+//        postCentralEvent(Central.CentralManagerWillRestoreState, userInfo: ["peripherals": peripherals])
+//    }
 
 }
