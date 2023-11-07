@@ -403,7 +403,7 @@ extension CentralProxy: CBCentralManagerDelegate {
             return
         }
         
-        guard scanRequest.peripherals[peripheral.identifier] == nil else { return }
+        //guard scanRequest.peripherals[peripheral.identifier] == nil else { return }
         
         let peripheral = Peripheral(peripheral: peripheral)
         scanRequest.peripherals[peripheral.identifier] = peripheral
